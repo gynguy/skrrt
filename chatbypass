@@ -1,0 +1,29 @@
+local meta, old = getrawmetatable(game), {};
+for i, v in next, meta do old[i] = v end;
+
+local char = 'ٓأأ';
+
+setreadonly(meta, false);
+
+meta.__namecall = newcclosure(function(...)
+local method = getnamecallmethod();
+local args = {...};
+local replacetext = {"nigger", "faggot", "thot", "bitch", "cunt", "fuck", "fucker", "whore", "dick", "penis", "asshole", "allahu", "akbar", "crap", "shit", "motherfucker", "girlfriend", "boyfriend", "slave", "hoe", "sex",  "cum", "pussy", "nigga", "slut","rape","Terrorist","Isis","1,2,3,4,5,6,7,8,9,0","Jihad","Holocaust","Hitler","Heil","Nazi","Gas the jews","Stalin","Retard","Penis","Vagina","Smegma","Genital","Retarded","Autistic","Ass","Dox","Ur ip is","Nigger Killer"}
+local replacedtext = ""
+
+if method == 'FireServer' and args[1].Name == 'SayMessageRequest' then
+  for count = 1, #replacetext do
+    if string.find(args[2], replacetext[count]) then
+      replacedtext = string.gsub(replacetext[count], '.', function(c)
+      return c .. char;
+      end);
+      args[2] = string.gsub(args[2], replacetext[count], replacedtext);
+    end;
+    end;
+	return old.__namecall(unpack(args));
+    end;
+
+    return old.__namecall(...);
+    end);
+
+    setreadonly(meta, true);
