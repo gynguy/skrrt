@@ -83,3 +83,14 @@ on = mouse1press
 
 loadstring(game:HttpGet('https://pastebin.com/raw/3FPpv84j'))()
 end)
+
+
+GameHub:Button("Phantom Forces GUI", function(variable)
+  if variable then
+    mouse1press = true
+  else
+end
+on = mouse1press
+
+loadstring(game:HttpGet(('https://pastebin.com/raw/ZvzszNDe'),true))()
+end)
