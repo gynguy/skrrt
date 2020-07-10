@@ -2,81 +2,84 @@ local LIB = loadstring(game:HttpGet("https://raw.githubusercontent.com/gynguy/sk
 local on = false
 local FeHub = LIB:CreateSection("FE")
 
-FeHub:Button("Ctrl TP", function(variable)
+FeHub:Button("Click Tp", function(variable)
   if variable then
-    on = true
+    mouse1press = true
   else
-    on = false
-  end
-   while on do
+end
+on = mouse1press
+
  loadstring(game:HttpGet("https://raw.githubusercontent.com/gynguy/skrrt/master/clicktp",true))()
-  end
-end)
+  end)
 
 FeHub:Button("E Noclip", function(variable)
   if variable then
-    on = true
+    mouse1press = true
   else
-    on = false
-  end
-   while on do
+end
+on = mouse1press
+
  loadstring(game:HttpGet("https://raw.githubusercontent.com/gynguy/skrrt/master/noclip",true))()
-  end
 end)
 
 FeHub:Button("Anti-Afk", function(variable)
   if variable then
-    on = true
+    mouse1press = true
   else
-    on = false
-  end
-   while on do
+end
+on = mouse1press
+
  loadstring(game:HttpGet("https://raw.githubusercontent.com/gynguy/skrrt/master/antiafk",true))()
-  end
-end)
+  end)
 
 FeHub:Button("Player's IP Leak", function(variable)
   if variable then
-    on = true
+    mouse1press = true
   else
-    on = false
-  end
-   while on do
+end
+on = mouse1press
+
  loadstring(game:HttpGet("https://raw.githubusercontent.com/gynguy/skrrt/master/ip",true))()
-  end
 end)
 
 FeHub:Button("Btools", function(variable)
   if variable then
-    on = true
+    mouse1press = true
   else
-    on = false
-  end
-   while on do
- loadstring(game:HttpGet("https://raw.githubusercontent.com/gynguy/skrrt/master/btools,true))()
-  end
+end
+on = mouse1press
+
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/gynguy/skrrt/master/btools",true))()
 end)
 
 FeHub:Button("Chat Bypass", function(variable)
   if variable then
-    on = true
+    mouse1press = true
   else
-    on = false
-  end
-   while on do
+end
+on = mouse1press
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/gynguy/skrrt/master/chatbypass", true))()
-  end
+end)
+
+FeHub:Button("Infinite Jump", function(variable)
+  if variable then
+    mouse1press = true
+  else
+end
+on = mouse1press
+
+loadstring(game:HttpGet(('https://pastebin.com/raw/D9qzeiBW'),true))()
 end)
 
 local GameHub = LIB:CreateSection("Game")
 
-GameHub:Button("Chat Bypass", function(variable)
+GameHub:Button("My Restaurant GUI", function(variable)
   if variable then
-    on = true
+    mouse1press = true
   else
-    on = false
-  end
-   while on do
-loadstring(game:HttpGet("https://pastebin.com/raw/JFeVbTv6", true))()
-  end
+end
+on = mouse1press
+
+loadstring(game:HttpGet('https://pastebin.com/raw/3FPpv84j'))()
 end)
