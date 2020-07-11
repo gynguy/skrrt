@@ -1,12 +1,8 @@
-local player = game:GetService("Players").LocalPlayer
-local uis = game:GetService("UserInputService")
-local Mouse = player:GetMouse()
-on = false
+local Plr = game:GetService("Players").LocalPlayer
+local Mouse = Plr:GetMouse()
 
-    Mouse.Button1Down:Connect(function()
-        if(on == true) then
-if not uis:IsKeyDown(Enum.KeyCode.LeftControl)then return end
+Mouse.Button1Down:connect(function()
+if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftControl) then return end
 if not Mouse.Target then return end
-            player.Character.Humanoid:MoveTo(Mouse.Hit.p)
-        end
-    end)
+Plr.Character:MoveTo(Mouse.Hit.p)
+end)
