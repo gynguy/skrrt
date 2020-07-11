@@ -105,3 +105,13 @@ on = mouse1press
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/gynguy/skrrt/master/rocitizens'),true))()
 end)
+
+
+GameHub:Button("Bad Business Chams & Aimbot", function(variable)
+  if variable then
+    mouse1press = true
+  else
+end
+on = mouse1press
+
+loadstring(game:HttpGetAsync( 'https://pastebin.com/raw/MnTAZbcn' ))()
