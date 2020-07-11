@@ -115,3 +115,4 @@ end
 on = mouse1press
 
 loadstring(game:HttpGetAsync( 'https://pastebin.com/raw/MnTAZbcn' ))()
+end)
