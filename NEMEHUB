@@ -94,3 +94,14 @@ on = mouse1press
 
 loadstring(game:HttpGet(('https://pastebin.com/raw/ZvzszNDe'),true))()
 end)
+
+
+GameHub:Button("Rocitizens GUI", function(variable)
+  if variable then
+    mouse1press = true
+  else
+end
+on = mouse1press
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/gynguy/skrrt/master/rocitizens'),true))()
+end)
