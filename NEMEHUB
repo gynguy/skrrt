@@ -125,4 +125,4 @@ GameHub:Button("Arsenal GUI", function(variable)
 end
 on = mouse1press
 
-loadstring(game:HttpGetAsync( 'https://raw.githubusercontent.com/gynguy/skrrt/master/arsenal%20gui' ))()
+loadstring(game:HttpGetAsync( 'https://raw.githubusercontent.com/gynguy/skrrt/master/arsenal' ))()
