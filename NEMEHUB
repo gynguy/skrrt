@@ -1,14 +1,16 @@
 local LIB = loadstring(game:HttpGet("https://raw.githubusercontent.com/gynguy/skrrt/master/uilib",true))()
 local on = false
-local FeHub = LIB:CreateSection("FE")
 
-var = Instance.new('Sound')
-var.SoundId = "rbxassetid://"..1140934389
-var.Looped = false
-var.Parent = game.workspace
-var.TimePosition = 1
-var:Play()
-print("WELCOME")
+
+--███████╗███████╗
+--██╔════╝██╔════╝
+--█████╗░░█████╗░░
+--██╔══╝░░██╔══╝░░
+--██║░░░░░███████╗
+--╚═╝░░░░░╚══════╝
+
+
+local FeHub = LIB:CreateSection("FE")
 
 FeHub:Button("Click Tp", function(variable)
   if variable then
@@ -80,6 +82,15 @@ on = mouse1press
 loadstring(game:HttpGet(('https://pastebin.com/raw/D9qzeiBW'),true))()
 end)
 
+--
+--██████╗░░█████╗░███╗░░░███╗███████╗
+--██╔════╝░██╔══██╗████╗░████║██╔════╝
+--██║░░██╗░███████║██╔████╔██║█████╗░░
+--██║░░╚██╗██╔══██║██║╚██╔╝██║██╔══╝░░
+--██████╔╝██║░░██║██║░╚═╝░██║███████╗
+--╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝
+--
+
 local GameHub = LIB:CreateSection("Game")
 
 GameHub:Button("My Restaurant GUI", function(variable)
@@ -134,4 +145,24 @@ end
 on = mouse1press
 
 loadstring(game:HttpGetAsync( 'https://raw.githubusercontent.com/gynguy/skrrt/master/arsenal' ))()
+end)
+
+--
+--██████╗░█████╗░██╗░░░██╗███╗░░██╗██████╗░
+--██╔════╝██╔══██╗██║░░░██║████╗░██║██╔══██╗
+--╚█████╗░██║░░██║██║░░░██║██╔██╗██║██║░░██║
+--░╚═══██╗██║░░██║██║░░░██║██║╚████║██║░░██║
+--██████╔╝╚█████╔╝╚██████╔╝██║░╚███║██████╔╝
+--╚═════╝░░╚════╝░░╚═════╝░╚═╝░░╚══╝╚═════╝░
+
+local MusicHub = LIB:CreateSection("Music")
+
+FeHub:Box("Local Audio Player", function(id)
+
+var = Instance.new('Sound')
+var.SoundId = "rbxassetid://"..tostring(id)
+var.Looped = false
+var.Parent = game.workspace
+var.TimePosition = 1
+var:Play()
 end)
