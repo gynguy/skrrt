@@ -1,0 +1,7 @@
+var = Instance.new('Sound')
+var.SoundId = "1140934389"
+var.Looped = false
+var.Parent = game.workspace
+var.TimePosition = 0
+var:Play()
+print("WELCOME")
