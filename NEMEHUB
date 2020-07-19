@@ -2,6 +2,14 @@ local LIB = loadstring(game:HttpGet("https://raw.githubusercontent.com/gynguy/sk
 local on = false
 local FeHub = LIB:CreateSection("FE")
 
+var = Instance.new('Sound')
+var.SoundId = "rbxassetid://"..1140934389
+var.Looped = false
+var.Parent = game.workspace
+var.TimePosition = 1
+var:Play()
+print("WELCOME")
+
 FeHub:Button("Click Tp", function(variable)
   if variable then
     mouse1press = true
