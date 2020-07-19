@@ -157,7 +157,7 @@ end)
 
 local MusicHub = LIB:CreateSection("Music")
 
-FeHub:Box("Local Audio Player", function(id)
+MusicHub:Box("Local Audio Player", function(id)
 
 var = Instance.new('Sound')
 var.SoundId = "rbxassetid://"..tostring(id)
