@@ -1,7 +1,7 @@
 var = Instance.new('Sound')
-var.SoundId = "1140934389"
+var.SoundId = "rbxassetid://"..1140934389
 var.Looped = false
 var.Parent = game.workspace
-var.TimePosition = 0
+var.TimePosition = 1
 var:Play()
-print("WELCOME")
+print("WELCOME TO NEMEHUB BY Vortex#2705")
