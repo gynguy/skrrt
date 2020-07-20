@@ -158,6 +158,16 @@ on = mouse1press
 loadstring(game:HttpGetAsync( 'https://raw.githubusercontent.com/gynguy/skrrt/master/womhub' ))()
 end)
 
+
+GameHub:Button("Big Paintball GUI", function(variable)
+  if variable then
+    mouse1press = true
+  else
+end
+on = mouse1press
+loadstring(game.HttpGet(game, "https://pastebin.com/raw/pgnigYpu")) ()
+end)
+
 --
 --██████╗░█████╗░██╗░░░██╗███╗░░██╗██████╗░
 --██╔════╝██╔══██╗██║░░░██║████╗░██║██╔══██╗
