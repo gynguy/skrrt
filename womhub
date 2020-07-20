@@ -1,0 +1,694 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local Frame1 = Instance.new("Frame")
+local GeneralFeatures1 = Instance.new("Frame")
+local TeleportsFeatures1 = Instance.new("Frame")
+local Frame = Instance.new("ImageLabel")
+local GeneralButton = Instance.new("TextButton")
+local TeleportsButton = Instance.new("TextButton")
+local Frame2 = Instance.new("ImageLabel")
+local GeneralFeatures = Instance.new("ImageLabel")
+local HideName = Instance.new("TextButton")
+local ChestAutofarm = Instance.new("TextButton")
+local NoClip = Instance.new("TextButton")
+local RemoveCuffs = Instance.new("TextButton")
+local InfStam = Instance.new("TextButton")
+local AlwaysDay = Instance.new("TextButton")
+local Menu = Instance.new("TextButton")
+local TeleportsFeatures = Instance.new("ImageLabel")
+local IronPort = Instance.new("TextButton")
+local BellVillage = Instance.new("TextButton")
+local SummerHold = Instance.new("TextButton")
+local EastTower = Instance.new("TextButton")
+local Riversville = Instance.new("TextButton")
+local SilentTower = Instance.new("TextButton")
+local Menu1 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local AntiAFK = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.BackgroundTransparency = 1.000
+main.Position = UDim2.new(0.00982800964, 0, 0.266666681, 0)
+main.Size = UDim2.new(0, 400, 0, 291)
+
+Frame1.Name = "Frame1"
+Frame1.Parent = main
+Frame1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame1.BorderSizePixel = 0
+Frame1.Position = UDim2.new(0.00314701768, 0, 0.158694759, 0)
+Frame1.Size = UDim2.new(0, 400, 0, 100)
+Frame1.ZIndex = 2
+
+GeneralFeatures1.Name = "GeneralFeatures1"
+GeneralFeatures1.Parent = main
+GeneralFeatures1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GeneralFeatures1.BorderSizePixel = 0
+GeneralFeatures1.Position = UDim2.new(0.00314701768, 0, 0.158694759, 0)
+GeneralFeatures1.Size = UDim2.new(0, 400, 0, 100)
+GeneralFeatures1.Visible = false
+GeneralFeatures1.ZIndex = 5
+
+TeleportsFeatures1.Name = "TeleportsFeatures1"
+TeleportsFeatures1.Parent = main
+TeleportsFeatures1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportsFeatures1.BorderSizePixel = 0
+TeleportsFeatures1.Position = UDim2.new(0.00314701768, 0, 0.158694759, 0)
+TeleportsFeatures1.Size = UDim2.new(0, 400, 0, 100)
+TeleportsFeatures1.Visible = false
+TeleportsFeatures1.ZIndex = 5
+
+Frame.Name = "Frame"
+Frame.Parent = main
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.00314698787, 0, 0.160404161, 0)
+Frame.Size = UDim2.new(0, 400, 0, 244)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.250
+
+GeneralButton.Name = "GeneralButton"
+GeneralButton.Parent = Frame
+GeneralButton.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+GeneralButton.BorderSizePixel = 0
+GeneralButton.Position = UDim2.new(0.25, 0, 0.0573770367, 0)
+GeneralButton.Size = UDim2.new(0, 200, 0, 50)
+GeneralButton.ZIndex = 3
+GeneralButton.Font = Enum.Font.SourceSans
+GeneralButton.Text = "General"
+GeneralButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+GeneralButton.TextSize = 20.000
+
+TeleportsButton.Name = "TeleportsButton"
+TeleportsButton.Parent = Frame
+TeleportsButton.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+TeleportsButton.BorderSizePixel = 0
+TeleportsButton.Position = UDim2.new(0.247500002, 0, 0.327868819, 0)
+TeleportsButton.Size = UDim2.new(0, 200, 0, 50)
+TeleportsButton.ZIndex = 3
+TeleportsButton.Font = Enum.Font.SourceSans
+TeleportsButton.Text = "Teleports"
+TeleportsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleportsButton.TextSize = 20.000
+
+Frame2.Name = "Frame2"
+Frame2.Parent = main
+Frame2.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Frame2.BackgroundTransparency = 1.000
+Frame2.Position = UDim2.new(0.00314701116, 0, 0.0470371097, 0)
+Frame2.Size = UDim2.new(0, 400, 0, 87)
+Frame2.Image = "rbxassetid://3570695787"
+Frame2.ImageColor3 = Color3.fromRGB(170, 0, 0)
+Frame2.ScaleType = Enum.ScaleType.Slice
+Frame2.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame2.SliceScale = 0.250
+
+GeneralFeatures.Name = "GeneralFeatures"
+GeneralFeatures.Parent = main
+GeneralFeatures.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GeneralFeatures.BackgroundTransparency = 1.000
+GeneralFeatures.Position = UDim2.new(0.00314698787, 0, 0.160404161, 0)
+GeneralFeatures.Size = UDim2.new(0, 400, 0, 244)
+GeneralFeatures.Visible = false
+GeneralFeatures.ZIndex = 5
+GeneralFeatures.Image = "rbxassetid://3570695787"
+GeneralFeatures.ScaleType = Enum.ScaleType.Slice
+GeneralFeatures.SliceCenter = Rect.new(100, 100, 100, 100)
+GeneralFeatures.SliceScale = 0.250
+
+HideName.Name = "HideName"
+HideName.Parent = GeneralFeatures
+HideName.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+HideName.BorderSizePixel = 0
+HideName.Position = UDim2.new(0.527500033, 0, 0.58606559, 0)
+HideName.Size = UDim2.new(0, 178, 0, 50)
+HideName.ZIndex = 6
+HideName.Font = Enum.Font.SourceSans
+HideName.Text = "Hide Name"
+HideName.TextColor3 = Color3.fromRGB(0, 0, 0)
+HideName.TextSize = 20.000
+
+ChestAutofarm.Name = "ChestAutofarm"
+ChestAutofarm.Parent = GeneralFeatures
+ChestAutofarm.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+ChestAutofarm.BorderSizePixel = 0
+ChestAutofarm.Position = UDim2.new(0.0274999999, 0, 0.0450819694, 0)
+ChestAutofarm.Size = UDim2.new(0, 178, 0, 50)
+ChestAutofarm.ZIndex = 6
+ChestAutofarm.Font = Enum.Font.SourceSans
+ChestAutofarm.Text = "Chest Autofarm"
+ChestAutofarm.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChestAutofarm.TextSize = 20.000
+
+NoClip.Name = "No Clip"
+NoClip.Parent = GeneralFeatures
+NoClip.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+NoClip.BorderSizePixel = 0
+NoClip.Position = UDim2.new(0.0274999999, 0, 0.58606559, 0)
+NoClip.Size = UDim2.new(0, 178, 0, 50)
+NoClip.ZIndex = 6
+NoClip.Font = Enum.Font.SourceSans
+NoClip.Text = "No Clip"
+NoClip.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoClip.TextSize = 20.000
+
+RemoveCuffs.Name = "RemoveCuffs"
+RemoveCuffs.Parent = GeneralFeatures
+RemoveCuffs.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+RemoveCuffs.BorderSizePixel = 0
+RemoveCuffs.Position = UDim2.new(0.527500033, 0, 0.0450819694, 0)
+RemoveCuffs.Size = UDim2.new(0, 178, 0, 50)
+RemoveCuffs.ZIndex = 6
+RemoveCuffs.Font = Enum.Font.SourceSans
+RemoveCuffs.Text = "Remove Hand Cuffs"
+RemoveCuffs.TextColor3 = Color3.fromRGB(0, 0, 0)
+RemoveCuffs.TextSize = 20.000
+
+InfStam.Name = "InfStam"
+InfStam.Parent = GeneralFeatures
+InfStam.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+InfStam.BorderSizePixel = 0
+InfStam.Position = UDim2.new(0.527500033, 0, 0.315721273, 0)
+InfStam.Size = UDim2.new(0, 178, 0, 50)
+InfStam.ZIndex = 6
+InfStam.Font = Enum.Font.SourceSans
+InfStam.Text = "Infinite Stamina"
+InfStam.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfStam.TextSize = 20.000
+
+AlwaysDay.Name = "AlwaysDay"
+AlwaysDay.Parent = GeneralFeatures
+AlwaysDay.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+AlwaysDay.BorderSizePixel = 0
+AlwaysDay.Position = UDim2.new(0.0274999999, 0, 0.315721273, 0)
+AlwaysDay.Size = UDim2.new(0, 178, 0, 50)
+AlwaysDay.ZIndex = 6
+AlwaysDay.Font = Enum.Font.SourceSans
+AlwaysDay.Text = "Always Day"
+AlwaysDay.TextColor3 = Color3.fromRGB(0, 0, 0)
+AlwaysDay.TextSize = 20.000
+
+Menu.Name = "Menu"
+Menu.Parent = GeneralFeatures
+Menu.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Menu.BorderSizePixel = 0
+Menu.Position = UDim2.new(0.324999988, 0, 0.83606559, 0)
+Menu.Size = UDim2.new(0, 139, 0, 34)
+Menu.ZIndex = 6
+Menu.Font = Enum.Font.SourceSans
+Menu.Text = "Back to menu"
+Menu.TextColor3 = Color3.fromRGB(0, 0, 0)
+Menu.TextSize = 20.000
+
+TeleportsFeatures.Name = "TeleportsFeatures"
+TeleportsFeatures.Parent = main
+TeleportsFeatures.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportsFeatures.BackgroundTransparency = 1.000
+TeleportsFeatures.Position = UDim2.new(0.00314698787, 0, 0.160404161, 0)
+TeleportsFeatures.Size = UDim2.new(0, 400, 0, 244)
+TeleportsFeatures.Visible = false
+TeleportsFeatures.ZIndex = 5
+TeleportsFeatures.Image = "rbxassetid://3570695787"
+TeleportsFeatures.ScaleType = Enum.ScaleType.Slice
+TeleportsFeatures.SliceCenter = Rect.new(100, 100, 100, 100)
+TeleportsFeatures.SliceScale = 0.250
+
+IronPort.Name = "IronPort"
+IronPort.Parent = TeleportsFeatures
+IronPort.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+IronPort.BorderSizePixel = 0
+IronPort.Position = UDim2.new(0.0299999993, 0, 0.0532786846, 0)
+IronPort.Size = UDim2.new(0, 178, 0, 50)
+IronPort.ZIndex = 7
+IronPort.Font = Enum.Font.SourceSans
+IronPort.Text = "Iron Port"
+IronPort.TextColor3 = Color3.fromRGB(0, 0, 0)
+IronPort.TextSize = 20.000
+
+BellVillage.Name = "BellVillage"
+BellVillage.Parent = TeleportsFeatures
+BellVillage.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+BellVillage.BorderSizePixel = 0
+BellVillage.Position = UDim2.new(0.529999971, 0, 0.58606559, 0)
+BellVillage.Size = UDim2.new(0, 178, 0, 50)
+BellVillage.ZIndex = 7
+BellVillage.Font = Enum.Font.SourceSans
+BellVillage.Text = "Bell Village"
+BellVillage.TextColor3 = Color3.fromRGB(0, 0, 0)
+BellVillage.TextSize = 20.000
+
+SummerHold.Name = "SummerHold"
+SummerHold.Parent = TeleportsFeatures
+SummerHold.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+SummerHold.BorderSizePixel = 0
+SummerHold.Position = UDim2.new(0.529999971, 0, 0.323770523, 0)
+SummerHold.Size = UDim2.new(0, 178, 0, 50)
+SummerHold.ZIndex = 7
+SummerHold.Font = Enum.Font.SourceSans
+SummerHold.Text = "Summer Hold"
+SummerHold.TextColor3 = Color3.fromRGB(0, 0, 0)
+SummerHold.TextSize = 20.000
+
+EastTower.Name = "EastTower"
+EastTower.Parent = TeleportsFeatures
+EastTower.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+EastTower.BorderSizePixel = 0
+EastTower.Position = UDim2.new(0.0299999993, 0, 0.58606559, 0)
+EastTower.Size = UDim2.new(0, 178, 0, 50)
+EastTower.ZIndex = 7
+EastTower.Font = Enum.Font.SourceSans
+EastTower.Text = "East Peninsula Tower"
+EastTower.TextColor3 = Color3.fromRGB(0, 0, 0)
+EastTower.TextSize = 20.000
+
+Riversville.Name = "Riversville"
+Riversville.Parent = TeleportsFeatures
+Riversville.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Riversville.BorderSizePixel = 0
+Riversville.Position = UDim2.new(0.0299999993, 0, 0.323770523, 0)
+Riversville.Size = UDim2.new(0, 178, 0, 50)
+Riversville.ZIndex = 7
+Riversville.Font = Enum.Font.SourceSans
+Riversville.Text = "Riversville"
+Riversville.TextColor3 = Color3.fromRGB(0, 0, 0)
+Riversville.TextSize = 20.000
+
+SilentTower.Name = "SilentTower"
+SilentTower.Parent = TeleportsFeatures
+SilentTower.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+SilentTower.BorderSizePixel = 0
+SilentTower.Position = UDim2.new(0.529999971, 0, 0.0532786846, 0)
+SilentTower.Size = UDim2.new(0, 178, 0, 50)
+SilentTower.ZIndex = 7
+SilentTower.Font = Enum.Font.SourceSans
+SilentTower.Text = "The Silent Tower"
+SilentTower.TextColor3 = Color3.fromRGB(0, 0, 0)
+SilentTower.TextSize = 20.000
+
+Menu1.Name = "Menu1"
+Menu1.Parent = TeleportsFeatures
+Menu1.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Menu1.BorderSizePixel = 0
+Menu1.Position = UDim2.new(0.324999988, 0, 0.83606559, 0)
+Menu1.Size = UDim2.new(0, 139, 0, 34)
+Menu1.ZIndex = 6
+Menu1.Font = Enum.Font.SourceSans
+Menu1.Text = "Back to menu"
+Menu1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Menu1.TextSize = 20.000
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.00314701116, 0, 0.0470371097, 0)
+TextLabel.Size = UDim2.new(0, 400, 0, 30)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = ":)"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 20.000
+
+AntiAFK.Name = "AntiAFK"
+AntiAFK.Parent = main
+AntiAFK.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+AntiAFK.BorderSizePixel = 0
+AntiAFK.Position = UDim2.new(0.252499998, 0, 0.788104057, 0)
+AntiAFK.Size = UDim2.new(0, 200, 0, 50)
+AntiAFK.Font = Enum.Font.SourceSans
+AntiAFK.Text = "Anti AFK"
+AntiAFK.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiAFK.TextSize = 20.000
+
+-- Scripts:
+
+local function OINC_fake_script() -- GeneralButton.LocalScript
+local script = Instance.new('LocalScript', GeneralButton)
+
+script.Parent.MouseButton1Click:Connect(function()
+script.Parent.Parent.Visible = false
+script.Parent.Parent.Parent.Frame1.Visible = false
+script.Parent.Parent.Parent.AntiAFK.Visible = false
+script.Parent.Parent.Parent.GeneralFeatures1.Visible = true
+script.Parent.Parent.Parent.GeneralFeatures.Visible = true
+end)
+end
+coroutine.wrap(OINC_fake_script)()
+local function OCSFK_fake_script() -- TeleportsButton.LocalScript
+local script = Instance.new('LocalScript', TeleportsButton)
+
+script.Parent.MouseButton1Click:Connect(function()
+script.Parent.Parent.Visible = false
+script.Parent.Parent.Parent.Frame1.Visible = false
+script.Parent.Parent.Parent.AntiAFK.Visible = false
+script.Parent.Parent.Parent.TeleportsFeatures1.Visible = true
+script.Parent.Parent.Parent.TeleportsFeatures.Visible = true
+end)
+end
+coroutine.wrap(OCSFK_fake_script)()
+local function VGOFUF_fake_script() -- HideName.LocalScript
+local script = Instance.new('LocalScript', HideName)
+
+script.Parent.MouseButton1Click:Connect(function()
+while true do
+game:GetService("Players").LocalPlayer.Character.Head:WaitForChild("Overhead"):Destroy()
+wait(0.1)
+end
+end)
+end
+coroutine.wrap(VGOFUF_fake_script)()
+local function KBEAC_fake_script() -- ChestAutofarm.LocalScript
+local script = Instance.new('LocalScript', ChestAutofarm)
+
+script.Parent.MouseButton1Click:Connect(function()
+-- Settings
+local speed = 60
+
+-- Variable
+local player = game.Players.LocalPlayer
+local rs = game:GetService("RunService")
+
+-- Find Nearest
+function bonk()
+local Closest
+local D = math.huge
+local shid = workspace.Map:GetDescendants()
+for i = 1, #shid do local v = shid[i]
+if v.Name == "Chest" and v:FindFirstChild("Base") and pcall(function() return player.Character.HumanoidRootPart,player.Character.Humanoid end) and not v:FindFirstChild("Open") then
+local newD = player:DistanceFromCharacter(v.Base.Position)
+if newD < D then
+Closest = v.Base
+D = newD
+end
+end
+end
+return Closest
+end
+
+-- Skeet
+while true do
+local near = bonk()
+if typeof(near) == "Instance" then
+repeat
+game:GetService("TweenService"):Create(player.Character.HumanoidRootPart, TweenInfo.new(player:DistanceFromCharacter(near.Position)/speed, Enum.EasingStyle.Linear), {CFrame = near.CFrame}):Play()
+wait(player:DistanceFromCharacter(near.Position)/speed)
+game.ReplicatedStorage.RS.Remotes.Misc.OpenChest:FireServer(near.Parent)
+wait(.1)
+until near.Parent:FindFirstChild("Open")
+end
+wait(.25)
+end
+end)
+end
+coroutine.wrap(KBEAC_fake_script)()
+local function EKZWCV_fake_script() -- NoClip.LocalScript
+local script = Instance.new('LocalScript', NoClip)
+
+local player = game.Players.LocalPlayer
+local rs = game:GetService("RunService")
+
+script.Parent.MouseButton1Click:Connect(function()
+rs.RenderStepped:Connect(function()
+player.Character.Humanoid:ChangeState(11)
+end)
+end)
+end
+coroutine.wrap(EKZWCV_fake_script)()
+local function PDIPH_fake_script() -- RemoveCuffs.LocalScript
+local script = Instance.new('LocalScript', RemoveCuffs)
+
+script.Parent.MouseButton1Click:Connect(function()
+local plr = game.Players.LocalPlayer.Name
+game.Workspace[plr].Jailed:Destroy()
+end)
+end
+coroutine.wrap(PDIPH_fake_script)()
+local function OCRKQB_fake_script() -- InfStam.LocalScript
+local script = Instance.new('LocalScript', InfStam)
+
+script.Parent.MouseButton1Click:Connect(function()
+game:GetService("Players").LocalPlayer.bin.Stamina.Changed:Connect(function()
+game:GetService("Players").LocalPlayer.bin.Stamina.Value = ((game:GetService("Players").LocalPlayer.bin.MaxStamina.Value-1)*5)+30
+end)
+end)
+end
+coroutine.wrap(OCRKQB_fake_script)()
+local function XLPGLS_fake_script() -- AlwaysDay.LocalScript
+local script = Instance.new('LocalScript', AlwaysDay)
+
+script.Parent.MouseButton1Click:Connect(function()
+for i,v in pairs(game:GetService("Lighting"):GetChildren()) do
+v:Destroy()
+end
+game:GetService("Lighting").Changed:Connect(function()
+game:GetService("Lighting").Ambient = Color3.new(1,1,1)
+game:GetService("Lighting").ClockTime = 14
+game:GetService("Lighting").FogStart = 999999
+game:GetService("Lighting").FogEnd = 999999
+game:GetService("Lighting").Brightness = 1
+game:GetService("Lighting").ColorShift_Top = Color3.fromRGB(255, 255, 255)
+game:GetService("Lighting").ColorShift_Bottom = Color3.fromRGB(255, 255, 255)
+game.Lighting.DescendantAdded:Connect(function(obj)
+end)
+end)
+end)
+end
+coroutine.wrap(XLPGLS_fake_script)()
+local function GEWN_fake_script() -- Menu.LocalScript
+local script = Instance.new('LocalScript', Menu)
+
+script.Parent.MouseButton1Click:Connect(function()
+script.Parent.Parent.Visible = true
+script.Parent.Parent.Parent.Frame1.Visible = true
+script.Parent.Parent.Parent.TextLabel.Visible = true
+script.Parent.Parent.Parent.Frame2.Visible = true
+script.Parent.Parent.Parent.Frame.Visible = true
+script.Parent.Parent.Parent.AntiAFK.Visible = true
+script.Parent.Parent.Parent.GeneralFeatures1.Visible = false
+script.Parent.Parent.Parent.GeneralFeatures.Visible = false
+end)
+end
+coroutine.wrap(GEWN_fake_script)()
+local function TKPYF_fake_script() -- IronPort.LocalScript
+local script = Instance.new('LocalScript', IronPort)
+
+script.Parent.MouseButton1Click:Connect(function()
+local ts = game:GetService("TweenService")
+local tinfo = TweenInfo.new(10, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
+local tween = ts:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, tinfo, {Position = Vector3.new(-20043.5, 160, -6346.22)})
+tween:Play()
+end)
+end
+coroutine.wrap(TKPYF_fake_script)()
+local function RQENMRJ_fake_script() -- BellVillage.LocalScript
+local script = Instance.new('LocalScript', BellVillage)
+
+script.Parent.MouseButton1Click:Connect(function()
+local ts = game:GetService("TweenService")
+local tinfo = TweenInfo.new(10, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
+local tween = ts:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, tinfo, {Position = Vector3.new(-14237.2, 160, -3838.57)})
+tween:Play()
+end)
+end
+coroutine.wrap(RQENMRJ_fake_script)()
+local function GNNUW_fake_script() -- SummerHold.LocalScript
+local script = Instance.new('LocalScript', SummerHold)
+
+script.Parent.MouseButton1Click:Connect(function()
+local ts = game:GetService("TweenService")
+local tinfo = TweenInfo.new(10, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
+local tween = ts:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, tinfo, {Position = Vector3.new(-16284.1, 160, -8104.49)})
+tween:Play()
+end)
+end
+coroutine.wrap(GNNUW_fake_script)()
+local function IZIW_fake_script() -- EastTower.LocalScript
+local script = Instance.new('LocalScript', EastTower)
+
+script.Parent.MouseButton1Click:Connect(function()
+local ts = game:GetService("TweenService")
+local tinfo = TweenInfo.new(10, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
+local tween = ts:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, tinfo, {Position = Vector3.new(-18932.4, 220, -5950.63)})
+tween:Play()
+end)
+end
+coroutine.wrap(IZIW_fake_script)()
+local function IMLBBFZ_fake_script() -- Riversville.LocalScript
+local script = Instance.new('LocalScript', Riversville)
+
+script.Parent.MouseButton1Click:Connect(function()
+local ts = game:GetService("TweenService")
+local tinfo = TweenInfo.new(10, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
+local tween = ts:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, tinfo, {Position = Vector3.new(-18614.3, 160, -4824.82)})
+tween:Play()
+end)
+end
+coroutine.wrap(IMLBBFZ_fake_script)()
+local function YCOBJ_fake_script() -- SilentTower.LocalScript
+local script = Instance.new('LocalScript', SilentTower)
+
+script.Parent.MouseButton1Click:Connect(function()
+local ts = game:GetService("TweenService")
+local tinfo = TweenInfo.new(10, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
+local tween = ts:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, tinfo, {Position = Vector3.new(-16670.3, 265, -4919.61)})
+tween:Play()
+end)
+end
+coroutine.wrap(YCOBJ_fake_script)()
+local function DFHB_fake_script() -- Menu1.LocalScript
+local script = Instance.new('LocalScript', Menu1)
+
+script.Parent.MouseButton1Click:Connect(function()
+script.Parent.Parent.Visible = true
+script.Parent.Parent.Parent.Frame1.Visible = true
+script.Parent.Parent.Parent.TextLabel.Visible = true
+script.Parent.Parent.Parent.Frame2.Visible = true
+script.Parent.Parent.Parent.Frame.Visible = true
+script.Parent.Parent.Parent.AntiAFK.Visible = true
+script.Parent.Parent.Parent.TeleportsFeatures1.Visible = false
+script.Parent.Parent.Parent.TeleportsFeatures.Visible = false
+end)
+end
+coroutine.wrap(DFHB_fake_script)()
+local function JIQX_fake_script() -- TextLabel.LocalScript
+local script = Instance.new('LocalScript', TextLabel)
+
+local plr = game.Players.LocalPlayer
+
+while true do wait()
+script.Parent.Text = "Welcome ".. tostring(plr)
+wait(5)
+script.Parent.Text = "GUI made by stitch the plug#9709"
+wait(5)
+script.Parent.Text = "Probably more features coming soon!"
+wait(5)
+script.Parent.Text = "Press K to open/close the GUI"
+wait(5)
+script.Parent.Text = "Welcome ".. tostring(plr)
+wait(5)
+script.Parent.Text = "GUI made by stitch the plug#9709"
+wait(5)
+script.Parent.Text = "Probably more features coming soon!"
+wait(5)
+script.Parent.Text = "Press K to open/close the GUI"
+wait(5)
+script.Parent.Text = "Welcome ".. tostring(plr)
+wait(5)
+script.Parent.Text = "GUI made by stitch the plug#9709"
+wait(5)
+script.Parent.Text = "Probably more features coming soon!"
+wait(5)
+script.Parent.Text = "Press K to open/close the GUI"
+wait(5)
+script.Parent.Text = "Welcome ".. tostring(plr)
+wait(5)
+script.Parent.Text = "GUI made by stitch the plug#9709"
+wait(5)
+script.Parent.Text = "Probably more features coming soon!"
+wait(5)
+script.Parent.Text = "Press K to open/close the GUI"
+wait(5)
+script.Parent.Text = "Welcome ".. tostring(plr)
+wait(5)
+script.Parent.Text = "GUI made by stitch the plug#9709"
+wait(5)
+script.Parent.Text = "Probably more features coming soon!"
+wait(5)
+script.Parent.Text = "Press K to open/close the GUI"
+wait(5)
+script.Parent.Text = "Yuno Gasai is best waifu :)"
+wait(5)
+end
+end
+coroutine.wrap(JIQX_fake_script)()
+local function KBFAHEE_fake_script()
+local script = Instance.new('LocalScript', main)
+
+function onKeyPress(inputObject, gameProcessedEvent)
+if not gameProcessedEvent then
+if inputObject.KeyCode == Enum.KeyCode.K then -- change 'Q' to any key on the keyboard. EX: Tab
+script.Parent.Visible = not script.Parent.Visible -- The frame or object that you want to open/close
+end
+end
+end
+game:GetService("UserInputService").InputBegan:connect(onKeyPress)
+end
+coroutine.wrap(KBFAHEE_fake_script)()
+local function OJVNXAZ_fake_script() -- AntiAFK.LocalScript
+local script = Instance.new('LocalScript', AntiAFK)
+
+local vu = game:GetService("VirtualUser")
+
+script.Parent.MouseButton1Click:Connect(function()
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+wait(1)
+vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+end)
+end
+coroutine.wrap(OJVNXAZ_fake_script)()
+local function NCGOO_fake_script() -- main.Drag Gui
+local script = Instance.new('LocalScript', main)
+
+-- Drag Function
+local function dragify(Frame)
+
+-- Locals
+local dragSpeed = .25 -- You can edit this. (Smoothness)
+
+
+local dragToggle = nil
+local dragInput = nil
+local dragStart = nil
+
+-- Update Frame Position
+function updateInput(input)
+local Delta = input.Position - dragStart
+local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+game:GetService("TweenService"):Create(Frame, TweenInfo.new(.25), {Position = Position}):Play()
+end
+
+-- User is inputting
+Frame.InputBegan:Connect(function(input)
+if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+dragToggle = true
+dragStart = input.Position
+startPos = Frame.Position
+input.Changed:Connect(function()
+if (input.UserInputState == Enum.UserInputState.End) then
+dragToggle = false
+end
+end)
+end
+end)
+
+-- Frame Input Changed so get the input
+Frame.InputChanged:Connect(function(input)
+if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+dragInput = input
+end
+end)
+
+-- User is dragging the frame
+game:GetService("UserInputService").InputChanged:Connect(function(input)
+if (input == dragInput and dragToggle) then
+updateInput(input)
+end
+end)
+end
+
+-- Call Drag Function
+dragify(script.Parent) -- Enable dragging
+end
+coroutine.wrap(NCGOO_fake_script)()
